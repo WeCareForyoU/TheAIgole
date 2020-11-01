@@ -1,0 +1,359 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+<div class="container-fluid my-4">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/1.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/11.jfif" class="d-black w-100" alt="...">
+                <div class="carousel-caption d-black d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/111.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="container my-3">
+    <h1 class="my-20 text-center text-green-5 text-uppercase font-weight-bold">Choose a language:- </h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/22.jfif" class="d-block w-100" alt="...">
+                <div class="card-body">
+                    <h1>python</h1>
+                    <p class="card-text">Python is an interpreted, object-oriented, high-level programming language with
+                        dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and
+                        therefore reduces the cost of program maintenance..</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/python" class="btn btn-sm btn-outline-secondary">View Program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+
+                    <img src="/static/23.jfif" class="d-block w-100" alt="...">
+                    <h1>java</h1>
+                    <p class="card-text">Java is a high-level programming language developed by Sun Microsystems. The Java syntax is similar to C++, but is strictly an object-oriented programming language. </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/java" class="btn btn-sm btn-outline-secondary">View Program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+
+                <img src="/static/33.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <h1>html</h1>
+
+                    <p class="card-text">HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/html" class="btn btn-sm btn-outline-secondary">View program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+
+                <img src="/static/34.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <h1>css</h1>
+                    <p class="card-text">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/css" class="btn btn-sm btn-outline-secondary">View Program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/44.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <h1>C++</h1>
+
+                    <p class="card-text">C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/c++" class="btn btn-sm btn-outline-secondary">View Program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/45.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <h1>c#</h1>
+                    <p class="card-text">C# (pronounced "C-sharp") is an object-oriented programming language from Microsoft that aims to combine the computing power of C++ with the programming ease of Visual Basic. C# is designed to work with Microsoft's . Net platform.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a type="button" href="/newc" class="btn btn-sm btn-outline-secondary">View Program</a>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center mu-10">
+        <section id="start">
+            <h1 class="text-uppercase font-weight-bold">THE ARTIFICIAL INTELLIGENCE</h1>
+            <img src="/static/1002.jpg" class="d-block w-100 h-100 mt-4" alt="...">
+
+
+            <h2 class="mt-4 md-4">|What is an AI|</h2>
+            <p>Artificial intelligence (AI), is intelligence demonstrated by machines, unlike the natural intelligence
+                displayed by humans
+                and animals. Leading AI textbooks define the field as the study of "intelligent agents": any device that
+                perceives its
+                environment and takes actions that maximize its chance of successfully achieving its goals.
+                Colloquially, the term "artificial
+                intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that
+                humans associate with
+                the human mind, such as "learning" and "problem solving".
+
+                Computer science defines AI research as the study of "intelligent agents": any device that perceives its
+                environment and takes actions that maximize its chance of
+                successfully achieving its goals. A more elaborate definition characterizes AI as "a system's ability to
+                correctly interpret external data, to learn from such data, and to use
+                those learnings to achieve specific goals and tasks through flexible adaptation."
+
+                AI often revolves around the use of algorithms. An algorithm is a set of unambiguous instructions that a
+                mechanical computer can execute.[b] A complex algorithm is often built on top of other, simpler,
+                algorithms. A simple example of an algorithm is the following (optimal for first player) recipe for play
+                at tic-tac-toe:
+
+                If someone has a "threat" (that is, two in a row), take the remaining square. Otherwise,
+                if a move "forks" to create two threats at once, play that move. Otherwise,
+                take the center square if it is free. Otherwise,
+                if your opponent has played in a corner, take the opposite corner. Otherwise,
+                take an empty corner if one exists. Otherwise,
+                take any empty square.
+            </p>
+            <h1 class="text-uppercase font-weight-bold">Levels of an AI</h1>
+
+            <section id="Narrow">
+                <img src="/static/fantastic.jpg" class="d-block w-100" alt="...">
+
+                <h1>(1)Narrow Artificial Intelligence</h1>
+                <p>Weak artificial intelligence (weak AI), is artificial intelligence that implements a limited part of
+                    mind, or as narrow AI, is focused on one narrow task. In John
+                    Searle's terms it “would be useful for testing hypothesis about minds, but would not actually be
+                    minds”. Contrast with strong AI which is defined as a machine with the
+                    ability to apply intelligence to any problem, rather than just one specific problem, sometimes
+                    considered to require consciousness, sentience and mind.[
+                    “Weak AI” is sometimes called “narrow AI”, but the latter is usually interpreted as subfields within
+                    the former. Hypothesis testing about minds or part of minds are typically
+                    not part of narrow AI, but rather implementation of some superficial lookalike feature. Many
+                    currently existing systems that claim to use “artificial intelligence” are likely
+                    operating as a narrow AI focused on a specific problem, and are not weak AI in the traditional
+                    sense.
+                    Siri, Cortana, and Google Assistant are all examples of narrow AI, but they are not good examples of
+                    a weak AI, as they operate within a limited pre-defined range of functions. They do not implement
+                    parts of minds, they use natural language processing together with predefined rules. They are in
+                    particular not examples of strong AI as there are no genuine intelligence nor self-awareness. AI
+                    researcher Ben Goertzel, on his blog in 2010, stated Siri was "VERY narrow and brittle" evidenced by
+                    annoying
+                    results if you ask questions outside the limits of the application.
+
+                </p>
+                <section id="General">
+                    <img src="/static/gai-1.jfif" class="d-block w-100" alt="...">
+
+                    <h1>(2)General Artificial Intelligence</h1>
+                    <p> Artificial general intelligence (AGI) is the hypothetical[1] intelligence of a machine that has
+                        the capacity to understand or
+                        learn any intellectual task that a human being can. It is a primary goal of some artificial
+                        intelligence research and a common
+                        topic in science fiction and futures studies. AGI can also be referred to as strong AI, full AI,
+                        or general intelligent
+                        action.Some academic sources reserve the term "strong AI" for machines that can experience
+                        consciousness. Today's
+                        AI is speculated to be decades away from AGI.
+
+                        In contrast to strong AI, weak AI (also called narrow AI) is not intended to perform human
+                        cognitive abilities, rather, weak AI
+                        is limited to the use of software to study or accomplish specific problem solving or reasoning
+                        tasks.
+                        Various criteria for intelligence have been proposed (most famously the Turing test) but to
+                        date, there is no definition that satisfies everyone. However, there is wide
+                        agreement among artificial intelligence researchers that intelligence is required to do the
+                        following:
+
+                        :reason, use strategy, solve puzzles, and make judgments under uncertainty;
+                        :represent knowledge, including commonsense knowledge;
+                        :plan;
+                        :learn;
+                        :communicate in natural language;
+                        :and integrate all these skills towards common goals. </p>
+
+
+                    <section id="Super">
+                        <img src="/static/asimo.jfif" class="d-block w-100" alt="...">
+
+                        <h1>(3)Singularity Artificial Intelligence</h1>
+                        <p>The Singularity is the hypothetical future creation of superintelligent machines.
+                            Superintelligence is defined as a technologically-created cognitive capacity far beyond that
+                            possible for humans. Should the Singularity occur, technology will advance beyond our
+                            ability to foresee or control its outcomes and the world will be transformed beyond
+                            recognition by the application of superintelligence to humans and/or human problems,
+                            including poverty, disease and mortality.
+                            Revolutions in genetics, nanotechnology and robotics (GNR) in the first half of the 21st
+                            century are expected to lay the foundation for the Singularity. According to Singularity
+                            theory,
+                            superintelligence will be developed by self-directed computers and will increase
+                            exponentially rather than incrementally.
+                            Their rate of development would also continue to increase, because they would take
+                            over their own development from their slower-thinking human creators. Imagine a
+                            computer scientist that was itself a super-intelligent computer. It would work incredibly
+                            quickly. It could draw on huge amounts of data effortlessly. It wouldn't even take breaks...
+                        </p>
+                        <h5 class="font-weight-bold">This is just the end of the website, not of an AI! </h5>
+    </div>
+    <footer class="page-footer bg-dark px-0">
+        <div class="bg-success px-0">
+            <div class="container-fluid px-0">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="https://www.facebook.com/profile.php?id=100041918841764"><i
+                                class="fab fa-facebook-f "></i></a>
+                        <a href="https://twitter.com/Dev41388457?s=08"><i class="fab fa-twitter ml-5"></i></a>
+                        <a href="https://www.linkedin.com/in/dev-mishra-7014871b3"><i
+                                class="fab fa-linkedin ml-5"></i></a>
+                        <a href="https://www.instagram.com/space.982"><i class="fab fa-instagram ml-5"></i></a>
+                        <a href="https://github.com/WeCareForyoU/wecair"><i class="fab fa-github-alt ml-5"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact </h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width: 125px; height: 2px">
+                    <form method="post" action="/contact">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="name" class="form-control" id="name" name="name" placeholder="enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="phone" class="form-control" id="phone" name="phone"
+                                placeholder="Enter Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="disc">Your Experience with us</label>
+                            <textarea class="form-control" id="disc" rows="3" name="disc"></textarea>
+                        </div>
+                        <button class="btn btn-success" type="submit">Submit</button>
+
+
+                    </form>
+
+
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">services</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width: 125px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">html </a></li>
+                        <li class="my-2"><a href="#">css</a></li>
+                        <li class="my-2"><a href="#">bootstrap</a></li>
+                        <li class="my-2"><a href="#">javascript</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">contact</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width: 125px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2 fas fa-home ml-4"><a class="mr-4" href="/">Home </a></li>
+                        <li class="my-2 fas fa-envelope ml-4"><a class="mr-4" href="/about">About Us</a></li>
+                        <li class="my-2 fas fa-taxi ml-4"><a class="mr-4" href="#start">Our Services</a></li>
+                        <li class="my-2 fas fa-phone ml-4"><a class="mr-4" href="/contact">contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Personal Details</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto " style="width: 125px; height: 2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class=""></i>Dev Mishra</li>
+                        <li class="my-2"><i class=""></i>Greater Noida West, India</li>
+                        <li class="my-2"><i class="">devm8054@gmail.com</i></li>
+                        <li class="my-2"><i class="">8130957282</i></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    {% endblock body %}

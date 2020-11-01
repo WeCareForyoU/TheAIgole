@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+CSS
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+<h2 class="font-weight-bold mt-4 ml-3" id="_syntax-coloring-color-preview" data-needslink="_syntax-coloring-color-preview">Syntax coloring &amp; color preview<a class="hash-link" href="#_syntax-coloring-color-preview">#</a></h2>
+<p class="md-2 ml-2">As you type, there is syntax highlighting as well as in context preview of colors.</p>
+<p><img src="/static/img/css 1.jfif" alt="Syntax and color"></p>
+<p class="md-2 ml-2">Clicking on a color preview will launch the integrated color picker which supports configuration of hue, saturation and opacity.</p>
+<p><img src="/static/css 2.jfif" alt="Color picker in CSS"></p>
+<blockquote>
+<p class="md-2 ml-2"><strong>Tip:</strong> You can trigger between different color modes by clicking on the color string at the top of the picker.</p>
+</blockquote>
+<p class="md-2 ml-2">You can hide VS Code's color previews by setting the following settings</a>:</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #A31515">"editor.colorDecorators"</span><span style="color: #000000">: </span><span style="color: #0000FF">false</span></code></pre>
+<p class="md-2 ml-2">To just disable it for css, Less and SCSS, use</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #A31515">"[css]"</span><span style="color: #000000">: {</span>
+<span style="color: #000000">    </span><span style="color: #0451A5">"editor.colorDecorators"</span><span style="color: #000000">: </span><span style="color: #0000FF">false</span>
+<span style="color: #000000">}</span></code></pre>
+<h2 class="font-weight-bold mt-4 ml-3" id="_folding" data-needslink="_folding">Folding<a class="hash-link transparent" href="#_folding">#</a></h2>
+<p class="md-2 ml-2">You can fold regions of source code using the folding icons on the gutter between line numbers and line start. Folding regions are available for all declarations (for example, rule declarations) and for multiline comments in the source code.</p>
+<p class="md-2 ml-2">Additionally you can use the following region markers to define a folding region:
+<code>/*#region*/</code> and <code>/*#endregion*/</code> in CSS/SCSS/Less or <code>// #region</code> and <code>// #endregion</code> In SCSS/Less.</p>
+<p class="md-2 ml-2">If you prefer to switch to indentation based folding for CSS, Less and SCSS, use:</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #A31515">"[css]"</span><span style="color: #000000">: {</span>
+<span style="color: #000000">    </span><span style="color: #0451A5">"editor.foldingStrategy"</span><span style="color: #000000">: </span><span style="color: #A31515">"indentation"</span>
+<span style="color: #000000">},</span></code></pre>
+<h2 class="font-weight-bold mt-4 ml-3" id="_emmet-snippets" data-needslink="_emmet-snippets">Emmet snippets<a class="hash-link transparent" href="#_emmet-snippets">#</a></h2>
+<p class="md-2 ml-2">Emmet abbreviation support is built into VS Code, suggestions are listed along with other suggestions and snippets in the editor auto-completion list.</p>
+<blockquote>
+<p class="md-2 ml-2"><strong>Tip:</strong> See the CSS section of the emmet cheat sheet for valid abbreviations.</p>
+</blockquote>
+<h2 class="font-weight-bold mt-4 ml-3" id="_go-to-symbol-in-file" data-needslink="_go-to-symbol-in-file">Go to Symbol in file<a class="hash-link transparent" href="#_go-to-symbol-in-file">#</a></h2>
+<p class="md-2 ml-2">You can quickly navigate to the relevant CSS symbol in the current file by pressing <span class="dynamic-keybinding keybinding win" data-commandid="workbench.action.gotoSymbol" data-osx="⇧⌘O" data-win="Ctrl+Shift+O" data-linux="Ctrl+Shift+O" title="macOS: ⇧⌘O, Linux: Ctrl+Shift+O">Ctrl+Shift+O</span>.</p>
+<h2 class="font-weight-bold mt-4 ml-3" id="_hovers" data-needslink="_hovers">Hovers<a class="hash-link transparent" href="#_hovers">#</a></h2>
+<p><img src="/static/css 3.jfif" alt="Hover in CSS"></p>
+
+</div>
+{% endblock body %}

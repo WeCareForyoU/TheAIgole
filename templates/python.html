@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+python
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+<h2 class="font-weight-bold mt-4 ml-3" id="_create-a-python-hello-world-source-code-file" data-needslink="_create-a-python-hello-world-source-code-file">Create a Python Hello World source code file<a class="hash-link transparent" href="#_create-a-python-hello-world-source-code-file">#</a></h2>
+ <p class="md-2 ml-2">From the File Explorer toolbar, select the <strong>New File</strong> button on the <code>hello</code> folder:</p>
+<p><img src="/static/p 1.jfif" alt="File Explorer New File"></p>
+<p class="md-2 ml-2">Name the file <code>hello.py</code>, and it automatically opens in the editor:</p>
+<p><img src="/static/p 2.jfif" alt="File Explorer hello.py"></p>
+<p class="md-2 ml-2" >By using the <code>.py</code> file extension, you tell VS Code to interpret this file as a Python program, so that it evaluates the contents with the Python extension and the selected interpreter.</p>
+<blockquote>
+<p class="md-2 ml-2"><strong>Note</strong>: The File Explorer toolbar also allows you to create folders within your workspace to better organize your code. You can use the <strong>New folder</strong> button to quickly create a folder.</p>
+</blockquote>
+<p class="md-2 ml-2">Now that you have a code file in your Workspace, enter the following source code in <code>hello.py</code>:</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #000000">msg = </span><span style="color: #A31515">"Hello World"</span>
+<span style="color: #795E26">print</span><span style="color: #000000">(msg)</span></code></pre>
+<p class="md-2 ml-2">When you start typing <code>print</code>, notice how Intellisence presents auto-completion options.</p>
+<p><img src="/static/p 3.jfif" alt="IntelliSense appearing for Python code"></p>
+<p class="md-2 ml-2">IntelliSense and auto-completions work for standard Python modules as well as other packages you've installed into the environment of the selected Python interpreter. It also provides completions for methods available on object types. For example, because the <code>msg</code> variable contains a string, IntelliSense provides string methods when you type <code>msg.</code>:</p>
+<p><img src="/static/p 4.jfif" alt="IntelliSense appearing for a variable whose type provides methods"></p>
+<p class="md-2 ml-2">Feel free to experiment with IntelliSense some more, but then revert your changes so you have only the <code>msg</code> variable and the <code>print</code> call, and save the file (<span class="dynamic-keybinding keybinding win" data-commandid="workbench.action.files.save" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S" title="macOS: ⌘S, Linux: Ctrl+S">Ctrl+S</span>).</p>
+<p class="md-2 ml-2">For full details on editing, formatting, and refactoring, see editing code. The Python extension also has full support for linting.</p>
+<h2 class="font-weight-bold mt-4 ml-3" id="_run-hello-world" data-needslink="_run-hello-world">Run Hello World<a class="hash-link transparent" href="#_run-hello-world">#</a></h2>
+<p class="md-2 ml-2">It's simple to run <code>hello.py</code> with Python. Just click the <strong>Run Python File in Terminal</strong> play button in the top-right side of the editor.</p>
+<p><img src="/static/p 5.jfif" alt="Using the run python file in terminal button"></p>
+<p class="md-2 ml-2">The button opens a terminal panel in which your Python interpreter is automatically activated, then runs <code>python3 hello.py</code> (macOS/Linux) or <code>python hello.py</code> (Windows):</p>
+<p><img src="/static/p 6.jfif" alt="Program output in a Python terminal"></p>
+
+</div>
+{% endblock body %}

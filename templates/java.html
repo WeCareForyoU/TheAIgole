@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+    <h2 id="_creating-a-source-code-file" class="md-2 ml-2" data-needslink="_creating-a-source-code-file">Creating a source code file<a class="hash-link transparent" href="#_creating-a-source-code-file">#</a></h2>
+    <p class="md-2 ml-2" >Create a folder for your Java program and open the folder with VS Code. Then in VS Code, create a new file and
+        save it with the name <code>Hello.java</code>. When you open that file, the Java Language Server automatically
+        starts loading, and you should see a loading icon on the right side of the Status Bar. After it finishes
+        loading, you will see a thumbs-up icon.</p>
+    <video  autoplay="" loop="" muted="" playsinline="" controls="">
+        <source src="/static/JavaHelloWorld.Standalone.mp4" type="video/mp4">
+    </video>
+
+
+    <blockquote>
+        <p class="md-2 ml-2"><strong>Note</strong>: If you open a Java file in VS Code without opening its folder, the Java Language Server might not work properly.</p>
+    </blockquote>
+    <p class="md-2 ml-2">VS Code will also try to figure out the correct package for the new type and fill the new file from a template. </a>.</p>
+    <p class="md-2 ml-2">You can also create a Java project using the <strong>Java: Create Java Project</strong> command. Bring up the <strong>Command Palette</strong>  (<span class="dynamic-keybinding keybinding win" data-commandid="workbench.action.showCommands" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P" title="macOS: ⇧⌘P, Linux: Ctrl+Shift+P">Ctrl+Shift+P</span>) and then type <code>java</code> to search for this command. After selecting the command, you will be prompted for the location and name of the project. You can also choose your build tool from this command.</p>
+    <video autoplay="" loop="" muted="" playsinline="" controls="">
+        <source src="/static/JavaHelloWorld.Standalone (1).mp4"  type="video/mp4">
+      </video>
+      <h2 class="font-weight-bold mt-4 ml-3" id="_editing-source-code" data-needslink="_editing-source-code">Editing source code<a class="hash-link" href="#_editing-source-code">#</a></h2>
+      <p class="md-2 ml-2">You can use code snippets to scaffold your classes and methods. VS Code also provides IntelliSense for code completion, and various refactor methods.</p>
+      <video autoplay="" loop="" muted="" playsinline="" controls="">
+        <source src="/static/JavaHelloWorld.Project.mp4" type="video/mp4">
+      </video>
+      <h2 id="_running-and-debugging-your-program" class="font-weight-bold mt-4 ml-3" data-needslink="_running-and-debugging-your-program">Running and debugging your program<a class="hash-link transparent" href="#_running-and-debugging-your-program">#</a></h2>
+      <p class="md-2 ml-2">To run and debug Java code, set a breakpoint, then either press <span class="dynamic-keybinding keybinding win" data-commandid="workbench.action.debug.start" data-osx="F5" data-win="F5" data-linux="F5" title="macOS: F5, Linux: F5">F5</span> on your keyboard or use the <strong>Run</strong> &gt; <strong>Start Debugging</strong> menu item. You can also use the <strong>Run|Debug</strong> CodeLens options in the editor. After the code compiles, you can see all your variables and threads in the Run view.</p>
+      <video autoplay="" loop="" muted="" playsinline="" controls="">
+        <source src="/static/run-debug.mp4" type="video/mp4">
+      </video>
+</div>
+{% endblock body %}

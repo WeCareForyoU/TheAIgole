@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}
+
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+<h2 class="font-weight-bold mt-4 ml-3" id="_create-hello-world" data-needslink="_create-hello-world">Create Hello World<a class="hash-link transparent" href="#_create-hello-world">#</a></h2>
+<p class="md-2 ml-2">From a Windows command prompt, create an empty folder called <code>projects</code> where you can place all your VS Code projects. Then create a sub-folder called <code>helloworld</code>, navigate into it, and open VS Code in that folder by entering the following commands:</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #000000">mkdir projects</span>
+<span style="color: #000000">cd projects</span>
+<span style="color: #000000">mkdir helloworld</span>
+<span style="color: #000000">cd helloworld</span>
+<span style="color: #000000">code .</span></code></pre>
+<p class="md-2 ml-2">The "code ." command opens VS Code in the current working folder, which becomes your "workspace". As you go through the tutorial, you will see three files created in a <code>.vscode</code> folder in the workspace:</p>
+<ul>
+<li><code>tasks.json</code> (build instructions)</li>
+<li><code>launch.json</code> (debugger settings)</li>
+<li><code>c_cpp_properties.json</code> (compiler path and IntelliSense settings)</li>
+</ul>
+<h3 class="font-weight-bold mt-4 ml-3" id="_add-a-source-code-file" data-needslink="_add-a-source-code-file">Add a source code file<a class="hash-link transparent" href="#_add-a-source-code-file">#</a></h3>
+<p class="md-2 ml-2">In the File Explorer title bar, select the <strong>New File</strong> button and name the file <code>helloworld.cpp</code>.</p>
+<p><img src="/static/c++ 1.jfif" alt="New File title bar button"></p>
+<h3 class="font-weight-bold mt-4 ml-3" id="_add-hello-world-source-code" data-needslink="_add-hello-world-source-code">Add hello world source code<a class="hash-link transparent" href="#_add-hello-world-source-code">#</a></h3>
+<p class="md-2 ml-2">Now paste in this source code:</p>
+<pre class="shiki" style="background-color: #FFFFFF"><code><span style="color: #0000FF">#include </span><span style="color: #A31515">&lt;iostream&gt;</span>
+<span style="color: #0000FF">#include </span><span style="color: #A31515">&lt;vector&gt;</span>
+<span style="color: #0000FF">#include </span><span style="color: #A31515">&lt;string&gt;</span>
+
+<span style="color: #0000FF">using</span><span style="color: #000000"> </span><span style="color: #0000FF">namespace</span><span style="color: #000000"> </span><span style="color: #267F99">std</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">int</span><span style="color: #000000"> </span><span style="color: #795E26">main</span><span style="color: #000000">()</span>
+<span style="color: #000000">{</span>
+<span style="color: #000000">    vector&lt;string&gt; msg {</span><span style="color: #A31515">"Hello"</span><span style="color: #000000">, </span><span style="color: #A31515">"C++"</span><span style="color: #000000">, </span><span style="color: #A31515">"World"</span><span style="color: #000000">, </span><span style="color: #A31515">"from"</span><span style="color: #000000">, </span><span style="color: #A31515">"VS Code"</span><span style="color: #000000">, </span><span style="color: #A31515">"and the C++ extension!"</span><span style="color: #000000">};</span>
+
+<span style="color: #000000">    </span><span style="color: #0000FF">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> string&amp; word : msg)</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">        cout &lt;&lt; word &lt;&lt; </span><span style="color: #A31515">" "</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">    cout &lt;&lt; endl;</span>
+<span style="color: #000000">}</span></code></pre>
+<p class="md-2 ml-2">Now press <span class="dynamic-keybinding keybinding win" data-commandid="workbench.action.files.save" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S" title="macOS: ⌘S, Linux: Ctrl+S">Ctrl+S</span> to save the file. Notice how the file you just added appears in the <strong>File Explorer</strong> view (<span class="dynamic-keybinding keybinding win" data-commandid="workbench.view.explorer" data-osx="⇧⌘E" data-win="Ctrl+Shift+E" data-linux="Ctrl+Shift+E" title="macOS: ⇧⌘E, Linux: Ctrl+Shift+E">Ctrl+Shift+E</span>) in the side bar of VS Code:</p>
+<p><img src="/static/c++ 2.jfif" alt="File Explorer"></p>
+<p class="md-2 ml-2">You can also enable Auto Save to automatically save your file changes, by checking <strong>Auto Save</strong> in the main <strong>File</strong> menu.</p>
+<p class="md-2 ml-2">The Activity Bar on the far left lets you open different views such as <strong>Search</strong>, <strong>Source Control</strong>, and <strong>Run</strong>. You'll look at the <strong>Run</strong> view later in this tutorial. You can find out more about the other views in the VS Code <a href="/docs/getstarted/userinterface">User Interface documentation</a>.</p>
+<blockquote>
+<p class="md-2 ml-2"><strong>Note</strong>: When you save or open a C++ file, you may see a notification from the C/C++ extension about the availability of an Insiders version, which lets you test new features and fixes. You can ignore this notification by selecting the <code>X</code> (<strong>Clear Notification</strong>).</p>
+</blockquote>
+{% endblock body %}
